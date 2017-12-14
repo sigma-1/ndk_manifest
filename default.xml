@@ -2,8 +2,12 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android-review.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="github"
+           fetch="https://github.com"/>
+
   <default revision="ndk-r15-release"
            remote="aosp"
            sync-j="4" />
@@ -66,7 +70,6 @@
   <project path="toolchain/xz" name="toolchain/xz" groups="presubmit" />
   <project path="toolchain/yasm" name="toolchain/yasm" groups="presubmit" />
 
-  <remote fetch="git://github.com" name="github" />
   <project path="toolchain/gcc" name="sigma-1/android_toolchain_gcc" remote="github" revision="master" />
 
 </manifest>
