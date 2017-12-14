@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch="git://github.com" />
   <default revision="ndk-r15-release"
            remote="aosp"
            sync-j="4" />
