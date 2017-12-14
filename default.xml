@@ -4,8 +4,6 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
-  <remote  name="github"
-           fetch="git://github.com" />
   <default revision="ndk-r15-release"
            remote="aosp"
            sync-j="4" />
@@ -57,7 +55,7 @@
   <project path="toolchain/build" name="toolchain/build" groups="presubmit" />
   <project path="toolchain/cloog" name="toolchain/cloog" groups="presubmit" />
   <project path="toolchain/expat" name="toolchain/expat" groups="presubmit" />
-  <project path="toolchain/gcc" name="sigma-1/android_toolchain_gcc" remote="github" revision="master" />
+  <project path="toolchain/gcc" name="sigma-1/android_toolchain_gcc" remote="github" fetch="git://github.com" revision="master" />
   <project path="toolchain/gdb" name="toolchain/gdb" groups="presubmit" />
   <project path="toolchain/gmp" name="toolchain/gmp" groups="presubmit" />
   <project path="toolchain/isl" name="toolchain/isl" groups="presubmit" />
